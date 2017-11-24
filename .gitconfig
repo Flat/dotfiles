@@ -1,0 +1,14 @@
+[user]
+	name = Ken Swenson
+	email = flat@imo.uto.moe
+	signingkey = C20BD10C
+[core]
+	editor = code -n -w
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[merge]
+	tool = meld
+[gpg]
+	program = gpg2

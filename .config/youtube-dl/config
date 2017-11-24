@@ -1,0 +1,11 @@
+# filename template
+-o "%(autonumber)s-%(title)s_%(upload_date)s.%(ext)s"
+
+# Download en,jp subtitles and embed in file
+--sub-format best
+--write-sub
+--sub-lang en,ja
+--embed-subs
+
+# Download using curl
+--external-downloader curl
