@@ -8,7 +8,6 @@ export DEVKITPRO=/home/flat/devkitPro
 export DEVKITARM=/home/flat/devkitPro/devkitARM
 export WORKON_HOME=~/.virtualenvs
 export WINEPREFIX=/media/HAPPYFUNTIMES/.wine
-export JAVA_HOME=/usr/lib/jvm/java-9-jdk
 export ZSH_TMUX_AUTOSTART=true
 export MPD_HOST=/home/flat/.config/mpd/socket
 export CHROOT=$HOME/dev/chroot
