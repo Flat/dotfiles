@@ -13,4 +13,5 @@ export MPD_HOST=/home/flat/.config/mpd/socket
 export CHROOT=$HOME/dev/chroot
 export RUST_SRC_PATH=/home/flat/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
 export QT_QPA_PLATFORMTHEME=gtk2
+export npm_config_prefix=~/.node_modules
 source ~/.bot_tokens
