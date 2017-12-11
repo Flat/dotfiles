@@ -9,3 +9,6 @@
 
 # Download using curl
 --external-downloader curl
+
+#auths
+--netrc
