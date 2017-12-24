@@ -14,4 +14,6 @@ export CHROOT=$HOME/dev/chroot
 export RUST_SRC_PATH=/home/flat/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
 export QT_QPA_PLATFORMTHEME=gtk2
 export npm_config_prefix=~/.node_modules
+export STEAM_RUNTIME_PREFER_HOST_LIBRARIES=1
+export STEAM_RUNTIME=0
 source ~/.bot_tokens
