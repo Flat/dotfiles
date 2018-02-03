@@ -93,7 +93,7 @@ vpn(){sudo openvpn /etc/openvpn/client/$1.conf}
 
 #PATH
 typeset -U path
-path=($DEVKITARM/bin $HOME/.node_modules/bin ~/.gem/ruby/2.3.0/bin ~/.gem/ruby/2.4.0/bin ~/bin ~/.cargo/bin /opt/mxe/usr/bin $path[@])
+path=($DEVKITARM/bin $HOME/.node_modules/bin ~/.gem/ruby/2.3.0/bin ~/.gem/ruby/2.4.0/bin ~/bin ~/.cargo/bin /opt/mxe/usr/bin ~/dev/go/bin $path[@])
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
