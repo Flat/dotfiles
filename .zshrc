@@ -84,7 +84,7 @@ disable -r time
 #functions
 absctl(){ git clone git://git.archlinux.org/svntogit/packages.git --single-branch -b packages/$1 $1; }
 twitch(){ streamlink twitch.tv/$1 best; }
-aurgit(){aursync --no-ver --no-view $* -f -n;}
+aurgit(){aur sync --no-ver --no-view $* -f -n;}
 vpn(){sudo openvpn /etc/openvpn/client/$1.conf}
 
 
