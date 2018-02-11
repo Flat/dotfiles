@@ -49,7 +49,6 @@ fi
 zplug "lib/theme-and-appearance", from:oh-my-zsh
 zplug "lib/compfix", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
-zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/sublime", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
