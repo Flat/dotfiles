@@ -7,8 +7,5 @@
 --sub-lang en,ja
 --embed-subs
 
-# Download using curl
---external-downloader curl
-
 #auths
 --netrc
