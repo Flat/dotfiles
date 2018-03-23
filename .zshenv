@@ -1,7 +1,7 @@
 # Exports
 export CHROOT=$HOME/dev/chroot
-export DEVKITARM=/home/flat/devkitPro/devkitARM
-export DEVKITPRO=/home/flat/devkitPro
+export DEVKITARM=/opt/devkitPro/devkitARM
+export DEVKITPRO=/opt/devkitPro
 export EDITOR='code -n -w'
 export LANG=en_US.UTF-8
 export LIBVIRT_DEFAULT_URI="qemu:///system"
