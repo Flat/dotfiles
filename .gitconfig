@@ -1,7 +1,7 @@
 [user]
 	name = Ken Swenson
-	email = flat@imo.uto.moe
-	signingkey = C20BD10C
+	email = me@kennethswenson.com
+	signingkey = 91DA8CD1
 [core]
 	editor = code -n -w
 [push]
