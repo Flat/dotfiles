@@ -1,7 +1,7 @@
 [user]
 	name = Ken Swenson
-	email = me@kennethswenson.com
-	signingkey = 91DA8CD1
+	email = flat@esoteric.moe
+	signingkey = CBCB7A9C
 [core]
 	editor = code -n -w
 [push]
