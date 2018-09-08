@@ -4,4 +4,3 @@ export XMODIFIERS=@im=fcitx
 export MPD_HOST=/home/flat/.config/mpd/socket
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
-exec budgie-desktop
