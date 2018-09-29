@@ -68,6 +68,9 @@ zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme as:theme, defer:
 
 zplug load
 
+# ZSH
+setopt histignorespace
+
 # Aliases
 alias edit="$EDITOR"
 alias sudo="sudo "
