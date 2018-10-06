@@ -3,7 +3,7 @@
 	email = flat@esoteric.moe
 	signingkey = CBCB7A9C
 [core]
-	editor = code -n -w
+	editor = nvim
 [push]
 	default = simple
 [commit]
