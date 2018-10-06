@@ -23,6 +23,8 @@ BULLETTRAIN_DIR_FG=white
 
 BULLETTRAIN_GIT_BG=blue
 
+BULLETTRAIN_STATUS_EXIT_SHOW=true
+
 custom_git_prompt() {
   prompt=$(git_prompt_info)
   prompt=${prompt//\//\ \ }
