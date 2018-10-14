@@ -88,7 +88,7 @@ disable -r time
 
 #functions
 twitch(){ streamlink twitch.tv/$1 best; }
-aurgit(){aur sync --no-ver --no-view $* -f -n;}
+aurgit(){aur sync --no-ver --no-view $* -f;}
 
 
 # added by travis gem
