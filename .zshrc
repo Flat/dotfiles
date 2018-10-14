@@ -98,8 +98,6 @@ aurgit(){aur sync --no-ver --no-view $* -f;}
 typeset -U path
 path=($DEVKITARM/bin $HOME/.node_modules/bin ~/.gem/ruby/2.3.0/bin ~/.gem/ruby/2.4.0/bin ~/.gem/ruby/2.5.0/bin ~/bin ~/.cargo/bin /opt/mxe/usr/bin ~/dev/go/bin $path[@])
 
-#kitty
-kitty + complete setup zsh | source  /dev/stdin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey "^[[1~" beginning-of-line
