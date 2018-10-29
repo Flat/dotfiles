@@ -83,7 +83,6 @@ alias updateaur='aur sync -u --no-view'
 eval $(thefuck --alias)
 alias ls=exa
 alias l="exa -lahg"
-alias pia="sudo pia"
 disable -r time
 
 #functions
