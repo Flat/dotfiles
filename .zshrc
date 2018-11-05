@@ -79,7 +79,7 @@ alias sudo="sudo "
 alias wine="LC_ALL=ja_JP.UTF-8 wine"
 alias imv="imv -s -b checks"
 alias aurrepo='repoctl update'
-alias updateaur='aur sync -u --no-view'
+alias updateaur='aur sync -u -c --no-view'
 eval $(thefuck --alias)
 alias ls=exa
 alias l="exa -lahg"
