@@ -3,12 +3,18 @@
 	email = flat@esoteric.moe
 	signingkey = CBCB7A9C
 [core]
-	editor = nvim
+	editor = code --wait
 [push]
 	default = simple
 [commit]
 	gpgsign = true
 [merge]
-	tool = meld
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 [gpg]
 	program = gpg2
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
