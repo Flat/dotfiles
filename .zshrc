@@ -50,7 +50,6 @@ fi
 # oh-my-zsh
 zplug "lib/theme-and-appearance", from:oh-my-zsh
 zplug "lib/compfix", from:oh-my-zsh
-zplug "lib/completion", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/sublime", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
@@ -60,6 +59,7 @@ zplug "lib/history", from:oh-my-zsh
 #zsh-users
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions", depth:1
 
 #other
 zplug "RobSis/zsh-completion-generator"
