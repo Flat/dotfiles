@@ -80,6 +80,7 @@ alias wine="LC_ALL=ja_JP.UTF-8 wine"
 alias imv="imv -s -b checks"
 alias aurrepo='repoctl update'
 alias updateaur='aur sync -u -c --no-view'
+alias updatemirrorlist='sudo reflector --protocol https --latest 30 --number 20 --sort rate --save /etc/pacman.d/mirrorlist'
 eval $(thefuck --alias)
 alias ls=exa
 alias l="exa -lahg"
