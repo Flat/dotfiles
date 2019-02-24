@@ -12,4 +12,4 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export WINEPREFIX=/media/HAPPYFUNTIMES/.wine
 export WORKON_HOME=~/.virtualenvs
 export ZSH_TMUX_AUTOSTART=true
-source ~/.bot_tokens
+source ~/.secenv
