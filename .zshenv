@@ -1,3 +1,6 @@
+# Path
+typeset -u path
+path=($DEVKITARM/bin $HOME/.node_modules/bin $HOME/bin $HOME/.cargo/bin /opt/mxe/usr/bin $HOME/dev/go/bin $HOME/.rvm/bin $path[@] $HOME/.gem/bin)
 # Exports
 export CHROOT=$HOME/dev/chroot
 export DEVKITARM=/opt/devkitpro/devkitARM

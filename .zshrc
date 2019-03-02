@@ -34,7 +34,6 @@ custom_git_prompt() {
 
 BULLETTRAIN_GIT_PROMPT_CMD="\$(custom_git_prompt)"
 
-
 #zplug
 export ZPLUG_HOME=~/.zplug
 source ~/.zplug/init.zsh
@@ -55,7 +54,6 @@ zplug "plugins/sublime", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
 
-
 #zsh-users
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
@@ -63,7 +61,6 @@ zplug "zsh-users/zsh-completions", depth:1
 
 #other
 zplug "RobSis/zsh-completion-generator"
-
 
 setopt prompt_subst
 zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme as:theme, defer:2
@@ -90,14 +87,8 @@ disable -r time
 twitch(){ streamlink twitch.tv/$1 best; }
 aurgit(){aur sync --no-ver --no-view $* -f;}
 
-
 # added by travis gem
 [ -f /home/flat/.travis/travis.sh ] && source /home/flat/.travis/travis.sh
-
-#PATH
-typeset -U path
-path=($DEVKITARM/bin $HOME/.node_modules/bin ~/bin ~/.cargo/bin /opt/mxe/usr/bin ~/dev/go/bin $path[@])
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey "^[[1~" beginning-of-line
@@ -111,3 +102,5 @@ if zplug check zsh-users/zsh-history-substring-search; then
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
