@@ -103,4 +103,3 @@ if zplug check zsh-users/zsh-history-substring-search; then
   bindkey '^[[B' history-substring-search-down
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
