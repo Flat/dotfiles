@@ -81,7 +81,6 @@ alias updatemirrorlist='sudo reflector --protocol https --latest 30 --number 20 
 eval $(thefuck --alias)
 alias ls=exa
 alias l="exa -lahg"
-alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
 disable -r time
 
 #functions
