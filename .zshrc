@@ -79,8 +79,11 @@ alias aurrepo='repoctl update'
 alias updateaur='aur sync -u -c --no-view'
 alias updatemirrorlist='sudo reflector --protocol https --latest 30 --number 20 --sort rate --save /etc/pacman.d/mirrorlist'
 eval $(thefuck --alias)
-alias ls=exa
-alias l="exa -lahg"
+alias ls=lsd
+alias l='ls -l'
+alias la='ls -la'
+alias lla='ls -la'
+alias lt='ls --tree'
 disable -r time
 
 #functions
