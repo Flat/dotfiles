@@ -93,7 +93,8 @@ aurgit(){aur sync --no-ver --no-view $* -f;}
 # added by travis gem
 [ -f /home/flat/.travis/travis.sh ] && source /home/flat/.travis/travis.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 bindkey "^[[5~" beginning-of-history
