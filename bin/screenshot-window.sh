@@ -1,5 +1,4 @@
 #!/bin/bash
-#! /bin/bash
 current_win="$(xdotool getactivewindow)"
 term_info="$(xwininfo -id "$current_win" | awk -F ': ' '/Width|Height|Absolute upper-left X|Absolute upper-left Y/ {printf $2 " "}')"
 term_array=($term_info)
