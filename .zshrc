@@ -4,36 +4,6 @@ zle -N self-insert url-quote-magic
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 
-#Theme variables
-BULLETTRAIN_PROMPT_ORDER=(
-  context
-  dir
-  git
-)
-
-BULLETTRAIN_PROMPT_CHAR="⚸ "
-BULLETTRAIN_PROMPT_SEPARATE_LINE=false
-BULLETTRAIN_PROMPT_ADD_NEWLINE=false
-BULLETTRAIN_TIME_SHOW=false
-
-BULLETTRAIN_CONTEXT_SHOW=true
-
-BULLETTRAIN_DIR_BG=magenta
-BULLETTRAIN_DIR_FG=white
-
-BULLETTRAIN_GIT_BG=blue
-
-BULLETTRAIN_STATUS_EXIT_SHOW=true
-
-custom_git_prompt() {
-  prompt=$(git_prompt_info)
-  prompt=${prompt//\//\ \ }
-  prompt=${prompt//_/\ }
-  echo ${prompt}
-}
-
-BULLETTRAIN_GIT_PROMPT_CMD="\$(custom_git_prompt)"
-
 #zplug
 export ZPLUG_HOME=~/.zplug
 source ~/.zplug/init.zsh
@@ -63,7 +33,6 @@ zplug "zsh-users/zsh-completions", depth:1
 zplug "RobSis/zsh-completion-generator"
 
 setopt prompt_subst
-zplug "caiogondim/bullet-train.zsh", use:bullet-train.zsh-theme as:theme, defer:2
 
 zplug load
 
@@ -107,3 +76,4 @@ if zplug check zsh-users/zsh-history-substring-search; then
   bindkey '^[[B' history-substring-search-down
 fi
 
+eval "$(starship init zsh)"
