@@ -28,11 +28,10 @@ zplug "lib/history", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions", depth:1
+zplug "zsh-users/zsh-autosuggestions"
 
 #other
 zplug "RobSis/zsh-completion-generator"
-
-setopt prompt_subst
 
 zplug load
 
