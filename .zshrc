@@ -56,7 +56,7 @@ disable -r time
 
 #functions
 twitch(){ streamlink twitch.tv/$1 best; }
-aurgit(){aur sync --no-ver --no-view $* -f;}
+aurgit(){aur sync -c --no-ver --no-view $* -f;}
 
 # added by travis gem
 [ -f /home/flat/.travis/travis.sh ] && source /home/flat/.travis/travis.sh
