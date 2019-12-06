@@ -1,5 +1,5 @@
 # Exports
-export ANDROID_SDK_ROOT=/opt/android-sdk/
+export ANDROID_SDK_ROOT=/opt/android-sdk
 export CHROOT=$HOME/dev/chroot
 export DEVKITARM=/opt/devkitpro/devkitARM
 export DEVKITPRO=/opt/devkitpro
@@ -17,4 +17,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=1
 source ~/.secenv
 # Path
 typeset -u path
-path=($DEVKITARM/bin $HOME/.node_modules/bin $HOME/.local/bin $HOME/.cargo/bin /opt/mxe/usr/bin $HOME/dev/go/bin $(ruby -e 'print Gem.user_dir')/bin $ANDROID_SDK_ROOT/emulator $path[@])
+path=($DEVKITARM/bin $HOME/.node_modules/bin $HOME/.local/bin $HOME/.cargo/bin /opt/mxe/usr/bin $HOME/dev/go/bin $(ruby -e 'print Gem.user_dir')/bin $ANDROID_SDK_ROOT/emulator $ANDROID_SDK_ROOT/build-tools/29.0.2 $path[@])
