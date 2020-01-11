@@ -5,6 +5,7 @@
 [core]
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [push]
 	default = simple
 [commit]
