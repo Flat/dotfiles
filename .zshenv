@@ -14,6 +14,7 @@ export WINEPREFIX=/media/HAPPYFUNTIMES/.wine
 export WORKON_HOME=~/.virtualenvs
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
+export GOPATH=~/dev/go
 source ~/.secenv
 # Path
 typeset -u path
