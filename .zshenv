@@ -18,4 +18,4 @@ export GOPATH=~/dev/go
 source ~/.secenv
 # Path
 typeset -u path
-path=($DEVKITARM/bin $HOME/.node_modules/bin $HOME/.local/bin $HOME/.cargo/bin /opt/mxe/usr/bin $HOME/dev/go/bin $(ruby -e 'print Gem.user_dir')/bin $ANDROID_SDK_ROOT/emulator $ANDROID_SDK_ROOT/build-tools/29.0.2 $path[@])
+path=($DEVKITARM/bin $HOME/.node_modules/bin $HOME/.local/bin $HOME/.cargo/bin /opt/mxe/usr/bin $HOME/dev/go/bin $(ruby -e 'print Gem.user_dir')/bin $ANDROID_SDK_ROOT/emulator $ANDROID_SDK_ROOT/build-tools/29.0.2 /usr/local/bin $path[@])
