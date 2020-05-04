@@ -1,39 +1,11 @@
+#zinit
+source ~/.zinit/bin/zinit.zsh
+
 #escape urls
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
-
-#zplug
-export ZPLUG_HOME=~/.zplug
-source ~/.zplug/init.zsh
-
-# Check for uninstalled plugins.
-if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-
-# oh-my-zsh
-zplug "lib/theme-and-appearance", from:oh-my-zsh
-zplug "lib/compfix", from:oh-my-zsh
-zplug "plugins/tmux", from:oh-my-zsh
-zplug "plugins/sublime", from:oh-my-zsh
-zplug "plugins/colorize", from:oh-my-zsh
-zplug "lib/history", from:oh-my-zsh
-
-#zsh-users
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-completions", depth:1
-zplug "zsh-users/zsh-autosuggestions"
-
-#other
-zplug "RobSis/zsh-completion-generator"
-
-zplug load
 
 # ZSH
 setopt histignorespace
@@ -69,10 +41,26 @@ bindkey "^[[5~" beginning-of-history
 bindkey "^[[6~" end-of-history
 bindkey "^[[3~" delete-char
 bindkey "^[[2~" quoted-insert
-
-if zplug check zsh-users/zsh-history-substring-search; then
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
-fi
-
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 eval "$(starship init zsh)"
+
+zinit ice svn
+zinit snippet OMZ::plugins/tmux
+
+zinit wait'!' lucid for \
+	OMZL::theme-and-appearance.zsh \
+	OMZP::colorize 
+
+zinit wait lucid for \
+	OMZL::compfix.zsh \
+	OMZP::colorize \
+	OMZL::history.zsh \
+	zsh-users/zsh-history-substring-search \
+	atinit"zicompinit; zicdreplay" \
+	    zsh-users/zsh-syntax-highlighting \
+	atload"_zsh_autosuggest_start" \
+	    zsh-users/zsh-autosuggestions \
+	blockf atpull'zinit creinstall -q .' \
+	    load zsh-users/zsh-completions \
+	    RobSis/zsh-completion-generator
