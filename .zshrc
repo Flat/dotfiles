@@ -49,12 +49,10 @@ zinit ice svn
 zinit snippet OMZ::plugins/tmux
 
 zinit wait'!' lucid for \
-	OMZL::theme-and-appearance.zsh \
 	OMZP::colorize 
 
 zinit wait lucid for \
 	OMZL::compfix.zsh \
-	OMZP::colorize \
 	OMZL::history.zsh \
 	zsh-users/zsh-history-substring-search \
 	atinit"zicompinit; zicdreplay" \
