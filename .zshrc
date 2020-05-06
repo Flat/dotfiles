@@ -56,7 +56,7 @@ zinit wait lucid for \
 	OMZL::history.zsh \
 	zsh-users/zsh-history-substring-search \
 	atinit"zicompinit; zicdreplay" \
-	    zsh-users/zsh-syntax-highlighting \
+	    zdharma/fast-syntax-highlighting \
 	atload"_zsh_autosuggest_start" \
 	    zsh-users/zsh-autosuggestions \
 	blockf atpull'zinit creinstall -q .' \
