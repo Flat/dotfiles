@@ -10,6 +10,10 @@ zle -N bracketed-paste bracketed-paste-magic
 # ZSH
 setopt histignorespace
 
+if [[ -z $TMUX ]] && [[ -z $SSH_CONNECTION ]]; then
+	tmux attach-session -t general_tmux || tmux new-session -s general_tmux
+fi
+
 # Aliases
 alias edit="$EDITOR"
 alias sudo="sudo "
@@ -44,9 +48,6 @@ bindkey "^[[2~" quoted-insert
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 eval "$(starship init zsh)"
-
-zinit ice svn
-zinit snippet OMZ::plugins/tmux
 
 zinit wait'!' lucid for \
 	OMZP::colorize 
