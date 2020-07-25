@@ -33,3 +33,5 @@
 	annotate = yes
 [format]
 	signOff = yes
+[pull]
+	rebase = true
