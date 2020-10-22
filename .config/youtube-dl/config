@@ -3,3 +3,7 @@
 --write-sub
 --sub-lang en,ja
 --embed-subs
+--hls-use-mpegts
+--write-description
+--write-thumbnail
+-o '%(uploader)s/%(title)s/%(title)s_%(upload_date)s_%(id)s.%(ext)s'
